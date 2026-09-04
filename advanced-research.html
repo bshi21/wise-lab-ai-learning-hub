@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN" data-page="research">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WISE Lab Advanced AI Research 外部学习路径。" />
+    <title>Advanced AI Research｜WISE Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="i18n.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <header class="site-header"><a class="brand brand-logo-link" href="index.html" aria-label="WISE Lab AI 学习中心首页"><img class="brand-logo" src="assets/WISE_NEW_LIGHT.png" alt="WISE Lab" /></a><nav aria-label="主导航"><a href="index.html">首页</a><a href="foundations.html">基础能力</a><a class="is-current" href="advanced-research.html">AI 研究</a><a href="academic-workflows.html">学术与工作流</a></nav><div class="language-switcher" data-language-toggle aria-label="切换语言"><button type="button" data-language="zh" aria-pressed="true">中</button><button type="button" data-language="en" aria-pressed="false">EN</button></div></header>
+    <main id="main-content">
+      <section class="page-hero"><div class="shell"><p class="crumbs"><a href="index.html">首页</a> / Advanced AI Research</p><p class="eyebrow">PATH 02 · ADVANCED AI RESEARCH</p><h1>从“会用”走向<em>可解释、可评估的系统。</em></h1><p class="lead">面向构建 AI、agentic 或数据密集型研究系统的成员。这里提供能力地图和外部学习入口，而不是一个特定应用的演示，亦不会把 RAG 或数据连接简化为“接上就能用”。</p><div class="meta-row"><span>建议人群：博后 · AI 研究人员 · 技术型研究生</span><span>前置条件：Python / Git / LLM 基础</span><span>模式：课程 · 文档 · 技术参考</span></div></div></section>
+      <div class="shell page-main">
+        <section class="start-grid" aria-labelledby="outcomes-title"><div><p class="eyebrow">START WITH THE OUTCOME</p><h2 id="outcomes-title">完成后，你应能做到：</h2><ul class="outcome-list"><li>把 agent 系统拆成任务、状态、工具、权限和人工审核点。</li><li>针对 RAG 或连接器方案说明数据来源、访问控制、检索策略、评估与时效性。</li><li>用测试、日志、成本控制和回滚思维评估系统是否可以进入真实环境。</li></ul></div><article class="start-card"><span class="tier core">CORE · START HERE</span><h2>Hugging Face Agents Course</h2><p>从 agent 概念、工具调用与推理流程开始建立工程共同语言，再逐步深入 context、RAG 和运维。</p><div class="resource-meta"><span>Hugging Face</span><span>在线课程</span><span>技术基础</span><span>外部链接</span></div><a class="button-link violet" href="https://huggingface.co/learn/agents-course/unit0/introduction" target="_blank" rel="noopener noreferrer">前往 Agents Course <span aria-hidden="true">↗</span></a></article></section>
+        <section class="module-layout" aria-labelledby="map-title"><aside><p class="eyebrow">CAPABILITY MAP</p><h2 id="map-title">七块能力，不是一套框架。</h2><p>先把系统边界、数据和评估说清楚，再选择模型、框架或部署方式。</p><a href="#resources">查看精选资源 ↓</a></aside><div class="module-list">
+          <article class="module-card violet"><span class="module-number">A</span><div><h3>Software &amp; LLM foundations</h3><p>Python、Git、软件质量、API、结构化输出、token/成本/延迟意识及模型选择。没有这些基础，后续 agent 设计很难验证。</p></div><a href="https://inria.github.io/scikit-learn-mooc/" target="_blank" rel="noopener noreferrer">学习：scikit-learn MOOC ↗</a></article>
+          <article class="module-card violet"><span class="module-number">B</span><div><h3>Agent architecture</h3><p>任务拆解、工具调用、状态、规划、交接、有限自主性与失败模式。系统应明确什么能做、什么不能做、在哪一步必须停下来。</p></div><a href="https://huggingface.co/learn/agents-course/unit0/introduction" target="_blank" rel="noopener noreferrer">学习：Agents Course ↗</a></article>
+          <article class="module-card violet"><span class="module-number">C</span><div><h3>Skill authoring &amp; tool interfaces</h3><p>当重复工作已经有清晰边界时，才学习编写 skill：将 instructions 与 tools 分离，定义输入输出、权限和密钥，并理解 MCP/API 的作用。优先只读与最小权限，避免把开放式工具当成默认能力。</p></div><a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener noreferrer">学习：Build skills ↗</a></article>
+          <article class="module-card violet"><span class="module-number">D</span><div><h3>Context engineering &amp; memory</h3><p>上下文选择、压缩、检索、会话状态、长期记忆、污染与过期。记忆不是越多越好；必须说明它来自哪里、何时失效、如何被审查。</p></div><a href="https://huggingface.co/learn/context-course/unit0/introduction" target="_blank" rel="noopener noreferrer">学习：Context Engineering Course ↗</a></article>
+          <article class="module-card violet"><span class="module-number">E</span><div><h3>RAG &amp; connected knowledge</h3><p>摄取、chunking、metadata、检索、引文、access control、评估与 freshness。RAG 是连接受控知识源的设计问题，不是上传文件后的自动真相机器。</p></div><a href="https://github.com/datawhalechina/happy-llm" target="_blank" rel="noopener noreferrer">学习：Happy-LLM ↗</a></article>
+          <article class="module-card violet"><span class="module-number">F</span><div><h3>Evaluation &amp; assurance</h3><p>任务测试集、tool-use tests、安全边界、审计日志、可观测性、人工审批和回归测试。评估应在演示前开始，并覆盖失败与拒绝执行的情况。</p></div><a href="https://github.com/adongwanai/AgentGuide" target="_blank" rel="noopener noreferrer">参考：AgentGuide ↗</a></article>
+          <article class="module-card violet"><span class="module-number">G</span><div><h3>Deployment &amp; operations</h3><p>身份、secrets、版本、日志、监控、成本控制、回滚与生命周期管理。研究原型和可操作系统之间，需要清晰的责任与运行边界。</p></div><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview" target="_blank" rel="noopener noreferrer">参考：Copilot Connectors overview ↗</a></article>
+        </div></section>
+        <section class="standard-card" aria-labelledby="standard-title"><div><p class="eyebrow">MINIMUM COMPLETION STANDARD</p><h2 id="standard-title">写出一页 Agent Design Brief。</h2><p>它不是展示酷炫 demo，而是让同行能理解并审查你的系统边界。每个进阶学习者都应能完成这个最小说明。</p></div><ul><li>目的与任务成功条件</li><li>输入与数据分类</li><li>可调用的工具及权限</li><li>context strategy 与 memory policy</li><li>RAG/连接器的访问控制</li><li>评估与回归测试方法</li><li>人工批准点与审计记录</li><li>运行限制、成本控制与回滚方式</li></ul></section>
+        <section class="boundary"><p class="eyebrow">DATA CONNECTIONS ARE A DESIGN DECISION</p><h2>连接数据前，先选择“索引”还是“实时读取”。</h2><p>例如，Copilot connector 的 synced 模式会摄取和索引内容；federated 模式以 MCP 实时读取且可保持数据在来源系统中。两者都需要确认身份、权限、机构配置和适用许可。把数据范围、接收人和人工审阅写进设计，而不是留给工具默认值。</p></section>
+        <section class="resource-section" id="resources" aria-labelledby="resources-title"><p class="eyebrow">CURATED EXTERNAL RESOURCES</p><h2 id="resources-title">按能力缺口继续深化</h2><div class="resource-grid">
+          <article class="resource-card"><span class="tier deepen">DEEPEN</span><h3>Happy-LLM</h3><p>Datawhale 的开源 LLM 教程，适合从模型基础继续进入训练、评测、RAG 与 agent 应用；建议具备 Python 和深度学习基础后使用。</p><a href="https://github.com/datawhalechina/happy-llm" target="_blank" rel="noopener noreferrer">打开 Happy-LLM ↗</a></article>
+          <article class="resource-card"><span class="tier reference">OPEN SOURCE · ENGLISH</span><h3>Hello-Agents</h3><p>Datawhale 的开源 agent 系统学习教程，提供英文内容；可用于从理论、工程实践到 skills、MCP 与 agent 设计的延伸学习。</p><a href="https://github.com/datawhalechina/hello-agents/blob/main/docs/README_EN.md" target="_blank" rel="noopener noreferrer">打开 Hello-Agents 英文版 ↗</a></article>
+          <article class="resource-card"><span class="tier reference">REFERENCE</span><h3>Dive into LLMs</h3><p>用于需要更深 LLM 技术细节的研究者；按具体问题查阅，而非线性必修。</p><a href="https://github.com/Lordog/dive-into-llms" target="_blank" rel="noopener noreferrer">打开 GitHub 项目 ↗</a></article>
+        </div></section>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="shell footer-grid"><div><a class="brand footer-brand" href="index.html"><img class="brand-logo footer-logo" src="assets/WISE_NEW_DARK.png" alt="WISE Lab" /></a><p>信息集散中心，不是学习管理系统。</p></div><div><p class="footer-label">使用原则</p><p>核验输出 · 保护数据 · 说明 AI 使用 · 最小权限 · 人工负责</p></div><div><p class="footer-label">资源维护</p><p>最后核验：2026 年 9 月 4 日<br />建议每季度复核链接、访问条件和产品变化。</p></div></div></footer>
+  </body>
+</html>

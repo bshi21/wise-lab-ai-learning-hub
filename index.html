@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN" data-page="home">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WISE Lab 团队的外部 AI 学习资源导航中心。" />
+    <title>WISE Lab AI 学习中心</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="i18n.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <header class="site-header">
+      <a class="brand brand-logo-link" href="index.html" aria-label="WISE Lab AI 学习中心首页"><img class="brand-logo" src="assets/WISE_NEW_LIGHT.png" alt="WISE Lab" /></a>
+      <nav aria-label="主导航">
+        <a class="is-current" href="index.html">首页</a>
+        <a href="foundations.html">基础能力</a>
+        <a href="advanced-research.html">AI 研究</a>
+        <a href="academic-workflows.html">学术与工作流</a>
+      </nav>
+      <div class="language-switcher" data-language-toggle aria-label="切换语言"><button type="button" data-language="zh" aria-pressed="true">中</button><button type="button" data-language="en" aria-pressed="false">EN</button></div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow">外部学习资源导航 · WISE LAB</p>
+          <h1>找到该学什么，<em>再去最合适的地方学。</em></h1>
+          <p class="lead">这里不是课程平台，也不会替你连接数据或执行自动化。它把团队成员带到可信的官方课程、吴恩达的学习资源和经筛选的技术参考，并说明每项能力适合谁、何时该用、何时不该用。</p>
+          <div class="hero-note">
+            <span aria-hidden="true">↓</span>
+            <p><strong>从角色开始。</strong> 选择最接近你当前工作的路径；以后可随时进入其他路径深化学习。</p>
+          </div>
+        </div>
+        <aside class="purpose-panel" aria-label="本站边界">
+          <p class="panel-label">本站做什么</p>
+          <ul class="check-list">
+            <li>按角色组织可信的外部学习资源</li>
+            <li>说明能力、前置条件和可观察成果</li>
+            <li>提示数据、权限、核验与人工审阅边界</li>
+          </ul>
+          <p class="panel-label muted">本站不做什么</p>
+          <p class="small-copy">不托管课程、不收集学习数据、不承诺产品功能，也不直接访问邮箱、日历或研究记录。</p>
+        </aside>
+      </section>
+
+      <section class="shell section-space" aria-labelledby="choose-path-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 · CHOOSE A PATH</p>
+          <h2 id="choose-path-title">我现在应该从哪里开始？</h2>
+          <p>每条路径都先给出一个可立即开始的 Core 资源；后续材料按需要打开，而不是要求一次学完。</p>
+        </div>
+        <div class="path-grid">
+          <article class="path-card foundation-card">
+            <p class="path-index">PATH 01</p>
+            <h3>AI Foundations<br /><span>基础能力</span></h3>
+            <p>适合学生、科研助理，以及任何刚开始在学习、研究或行政工作中使用 AI 的成员。</p>
+            <ul>
+              <li>理解能力、限制与责任</li>
+              <li>用好 ChatGPT、Claude 与 Copilot</li>
+              <li>识别 skills、connectors 与 agents 的边界</li>
+            </ul>
+            <a class="text-link" href="foundations.html">进入基础能力路径 <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="path-card research-card">
+            <p class="path-index">PATH 02</p>
+            <h3>Advanced AI<br /><span>Research</span></h3>
+            <p>适合博后、技术型研究人员及希望设计、评估或部署 AI/agentic 系统的成员。</p>
+            <ul>
+              <li>Agent 架构、工具与 context engineering</li>
+              <li>RAG、数据连接与评估</li>
+              <li>安全、运维与有限自主性</li>
+            </ul>
+            <a class="text-link" href="advanced-research.html">进入 AI 研究路径 <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="path-card workflow-card">
+            <p class="path-index">PATH 03</p>
+            <h3>Academic &amp;<br /><span>Workflows</span></h3>
+            <p>适合教职、研究负责人和需要改善沟通、会议、写作、数据与日常规划的人。</p>
+            <ul>
+              <li>Microsoft 365 的研究与工作流程</li>
+              <li>日程、会议、文档、演示和数据工作</li>
+              <li>自动简报与连接器的审批边界</li>
+            </ul>
+            <a class="text-link" href="academic-workflows.html">进入工作流路径 <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="shell section-space decision-section" aria-labelledby="connections-title">
+        <div class="section-heading">
+          <p class="eyebrow">02 · CONNECTED WORKFLOWS</p>
+          <h2 id="connections-title">RAG、数据连接和自动简报：先学会判断，再考虑实现。</h2>
+          <p>它们是应学习的能力，也是之后可能开展的独立项目；并非本网站提供的功能或默认承诺。</p>
+        </div>
+        <ol class="decision-steps">
+          <li><span>01</span><div><h3>确认来源系统</h3><p>数据来自 Outlook、Teams、Calendar、SharePoint、实验记录，还是外部业务系统？先定义系统和数据分类。</p></div></li>
+          <li><span>02</span><div><h3>确认批准路径</h3><p>核实 QUT 的许可、管理员配置和允许使用的 connector；优先采用机构管理的 Microsoft 365 来源。</p></div></li>
+          <li><span>03</span><div><h3>限制范围与接收人</h3><p>只连接完成目标所需的最少数据，明确谁会看到结果，以及是否需要保留、索引或同步数据。</p></div></li>
+          <li><span>04</span><div><h3>保留人工审阅</h3><p>自动简报、RAG 回答或 agent 输出都必须由责任人检查后再发送、决策或行动。</p></div></li>
+        </ol>
+      </section>
+
+      <section class="shell section-space tiers-section" aria-labelledby="resource-title">
+        <div class="section-heading">
+          <p class="eyebrow">03 · TRUSTED CURATION</p>
+          <h2 id="resource-title">资源有层级，链接有责任。</h2>
+        </div>
+        <div class="tier-grid">
+          <article><span class="tier core">CORE</span><h3>先从这里开始</h3><p>稳定、官方或成熟的第一资源；足以让学习者立即行动。</p></article>
+          <article><span class="tier deepen">DEEPEN</span><h3>按需深化</h3><p>在完成 Core 后，针对具体任务或技术缺口继续学习。</p></article>
+          <article><span class="tier reference">REFERENCE</span><h3>工作时查阅</h3><p>文档、示例和教程；不要求线性完成。</p></article>
+          <article><span class="tier verify">WATCH / VERIFY</span><h3>先确认访问条件</h3><p>涉及许可证、beta 功能、机构配置或快速变化的产品能力。</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div><a class="brand footer-brand" href="index.html"><img class="brand-logo footer-logo" src="assets/WISE_NEW_DARK.png" alt="WISE Lab" /></a><p>信息集散中心，不是学习管理系统。</p></div>
+        <div><p class="footer-label">使用原则</p><p>核验输出 · 保护数据 · 说明 AI 使用 · 最小权限 · 人工负责</p></div>
+        <div><p class="footer-label">资源维护</p><p>最后核验：2026 年 9 月 4 日<br />建议每季度复核链接、访问条件和产品变化。</p></div>
+      </div>
+    </footer>
+  </body>
+</html>
