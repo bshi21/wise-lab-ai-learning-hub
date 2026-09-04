@@ -121,3 +121,9 @@ test('academic workflows use the selected app videos and explain how a morning b
   assert.match(foundationsPage, /把 GitHub 链接直接作为 prompt/, 'the skills directory should explain how to hand a GitHub skill to a GenAI tool');
   assert.match(researchPage, /README_EN\.md/, 'Hello-Agents should point learners to its English resource');
 });
+
+test('GitHub Pages publishes every independently linked static route without Jekyll processing', async () => {
+  const marker = await readFile(join(siteRoot, '.nojekyll'), 'utf8');
+
+  assert.equal(marker, '', 'the publishing root should contain the GitHub Pages no-Jekyll marker');
+});
